@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="mx-auto px-0 md:px-4 pt-[30px]">
+      <div class="row">
+        <div class="grid grid-cols-12">
+          <!-- Left Sidebar -->
+          <div class="col-span-12 lg:col-span-3 order-2 md:order-2 lg:order-1">
+            <!-- Search Section -->
+            <div class="p-[20px]">
+              <h2
+                class="search__heading relative text-[26px] text-[#010f2e] font-bold pb-[4px] mb-[30px]"
+              >
+                Search
+              </h2>
+              <div
+                class="flex w-full h-[60px] bg-[#fff] p-[10px] search-container"
+              >
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  class="search-input pr-[20px] pl-[10px]"
+                />
+                <button class="search-button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- Recent Posts -->
+            <div class="p-[20px]">
+              <h2
+                class="post__heading relative font-bold mb-4 text-[26px] text-[#010f2e]"
+              >
+                Recent Post
+              </h2>
+              <div class="recent-posts sm:mx-[0px]">
+                <div class="row">
+                  <div class="grid-cols-12">
+                    <div class="col-span-12 mb-[20px]">
+                      <div class="post-item">
+                        <img
+                          src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/recent-post-img1.jpg"
+                          alt="Post Thumbnail"
+                          class="post-image"
+                        />
+                        <div class="post-content">
+                          <a class="post-title text-[24px] lg:text-[16px]"
+                            >Maecenas ac imperdiet purus, in tempor.</a
+                          >
+                          <p class="post-date text-[22px] lg:text-[14px]">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512"
+                              class="w-[28px] h-[28px] lg:w-[14px] lg:h-[14px]"
+                            >
+                              <path
+                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
+                              />
+                            </svg>
+                            4 May, 2024
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-span-12 mb-[20px]">
+                      <div class="post-item">
+                        <img
+                          src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/recent-post-img2.jpg"
+                          alt="Post Thumbnail"
+                          class="post-image"
+                        />
+                        <div class="post-content">
+                          <a class="post-title text-[24px] lg:text-[16px]"
+                            >Things That Make You Lovable Hate.</a
+                          >
+                          <p class="post-date text-[22px] lg:text-[14px]">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512"
+                              class="w-[28px] h-[28px] lg:w-[14px] lg:h-[14px]"
+                            >
+                              <path
+                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
+                              />
+                            </svg>
+                            12 June, 2024
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-span-12 mb-[20px]">
+                      <div class="post-item">
+                        <img
+                          src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/recent-post-img3.jpg"
+                          alt="Post Thumbnail"
+                          class="post-image"
+                        />
+                        <div class="post-content">
+                          <a class="post-title text-[24px] lg:text-[16px]"
+                            >Understand Corporate Business Before You.</a
+                          >
+                          <p class="post-date text-[22px] lg:text-[14px]">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512"
+                              class="w-[28px] h-[28px] lg:w-[14px] lg:h-[14px]"
+                            >
+                              <path
+                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
+                              />
+                            </svg>
+                            28 April, 2024
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-span-12 mb-[20px]">
+                      <div class="post-item">
+                        <img
+                          src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/recent-post-img3.jpg"
+                          alt="Post Thumbnail"
+                          class="post-image"
+                        />
+                        <div class="post-content">
+                          <a class="post-title text-[24px] lg:text-[16px]"
+                            >Understand Corporate Business Before You.</a
+                          >
+                          <p class="post-date text-[22px] lg:text-[14px]">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512"
+                              class="w-[28px] h-[28px] lg:w-[14px] lg:h-[14px]"
+                            >
+                              <path
+                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
+                              />
+                            </svg>
+                            28 April, 2024
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-span-12 mb-[20px]">
+                      <div class="post-item">
+                        <img
+                          src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/recent-post-img4.jpg"
+                          alt="Post Thumbnail"
+                          class="post-image"
+                        />
+                        <div class="post-content">
+                          <a class="post-title text-[24px] lg:text-[16px]"
+                            >Learn The Truth About Corporate.</a
+                          >
+                          <p class="post-date text-[22px] lg:text-[14px]">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512"
+                              class="w-[28px] h-[28px] lg:w-[14px] lg:h-[14px]"
+                            >
+                              <path
+                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
+                              />
+                            </svg>
+                            9 August, 2024
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Category -->
+            <div class="p-[20px]">
+              <h2
+                class="post__heading relative font-bold mb-4 text-[26px] text-[#010f2e]"
+              >
+                Category
+              </h2>
+              <div class="category-list text-[#777777]">
+                <div class="category-item mb-[10px]">
+                  <a href="#" class="category-link">
+                    <span class="category-name flex items-center text-[15px]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                        fill="#777777"
+                        class="w-[10px] h-[10px] mr-[8px]"
+                      >
+                        <path
+                          d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                        />
+                      </svg>
+                      Design</span
+                    >
+                    <span class="category-count">05</span>
+                  </a>
+                </div>
+                <div class="category-item mb-[10px]">
+                  <a href="#" class="category-link">
+                    <span class="category-name flex items-center text-[15px]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                        fill="#777777"
+                        class="w-[10px] h-[10px] mr-[8px]"
+                      >
+                        <path
+                          d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                        />
+                      </svg>
+                      Development</span
+                    >
+                    <span class="category-count">05</span>
+                  </a>
+                </div>
+                <div class="category-item mb-[10px]">
+                  <a href="#" class="category-link">
+                    <span class="category-name flex items-center text-[15px]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                        fill="#777777"
+                        class="w-[10px] h-[10px] mr-[8px]"
+                      >
+                        <path
+                          d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                        />
+                      </svg>
+                      Marketing</span
+                    >
+                    <span class="category-count">05</span>
+                  </a>
+                </div>
+                <div class="category-item mb-[10px]">
+                  <a href="#" class="category-link">
+                    <span class="category-name flex items-center text-[15px]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                        fill="#777777"
+                        class="w-[10px] h-[10px] mr-[8px]"
+                      >
+                        <path
+                          d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                        />
+                      </svg>
+                      Business</span
+                    >
+                    <span class="category-count">05</span>
+                  </a>
+                </div>
+                <div class="category-item mb-[10px]">
+                  <a href="#" class="category-link">
+                    <span class="category-name flex items-center text-[15px]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                        fill="#777777"
+                        class="w-[10px] h-[10px] mr-[8px]"
+                      >
+                        <path
+                          d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                        />
+                      </svg>
+                      Branding</span
+                    >
+                    <span class="category-count">05</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Content -->
+          <div class="col-span-12 lg:col-span-6 order-1 md:order-1 lg:order-2">
+            <div class="p-[20px]">
+              <div class="relative h-[400px] mb-6 group">
+                <img
+                  src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/blog-img1.jpg"
+                  alt=""
+                  class="w-full h-full object-cover rounded-[4px]"
+                />
+
+                <button
+                  class="btn__previous absolute left-4 top-1/2 -translate-y-1/2 w-[50px] h-[50px] bg-white rounded-[4px] flex items-center justify-center transition-opacity duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                    fill="#fff"
+                    class="w-[15px] h-[15px]"
+                  >
+                    <path
+                      d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="btn__next absolute right-4 top-1/2 -translate-y-1/2 w-[50px] h-[50px] bg-white rounded-[4px] flex items-center justify-center transition-opacity duration-300"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                    fill="#fff"
+                    class="w-[15px] h-[15px]"
+                  >
+                    <path
+                      d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                    />
+                  </svg>
+                </button>
+
+                <!-- Date and Admin badges -->
+                <div class="absolute bottom-4 left-4 flex items-center gap-2">
+                  <a
+                    class="calendar__link text-white px-[20px] py-[5px] rounded text-sm flex items-center gap-1 cursor-pointer"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      class="w-[15px] h-[15px] fill-current"
+                    >
+                      <path
+                        d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
+                      ></path>
+                    </svg>
+                    7 March, 2024
+                  </a>
+                  <a
+                    class="admin__link text-white px-[20px] py-[5px] rounded text-sm flex items-center gap-1 cursor-pointer ml-[20px]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      class="w-[15px] h-[15px] fill-current"
+                    >
+                      <path
+                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+                      />
+                    </svg>
+                    By Admin
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h1
+                  class="text-[25px] leading-[35px] font-bold mb-[11px] text-[#010f2e]"
+                >
+                  Quisque posuere condimentum suscipit sed luctus dolor ut nulla
+                  aliquet, ac eleifend ex cursus.
+                </h1>
+                <p
+                  class="text-[14px] leading-[24px] font-normal text-[#777777] mb-[12px]"
+                >
+                  Quisque posuere condimentum suscipit. Sed luctus dolor ut
+                  nulla aliquet, ac eleifend ex cursus. Vivamus vitae eleifend
+                  leo, sed vehicula turpis. Donec egestas tincidunt quam
+                  vestibulum sagittis. Etiam maximus vel felis sit amet aliquet.
+                  Donec accumsan velit nec iaculis viverra.
+                </p>
+                <p
+                  class="text-[14px] leading-[24px] font-normal text-[#777777] mb-[12px]"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque orci dolor, dictum non lacus accumsan, tempus
+                  tristique libero. Proin dolor lectus, dapibus in vehicula vel,
+                  dapibus a odio. Nam bibendum facilisis vulputate. Nunc
+                  sagittis laoreet leo, nec sagittis urna. Quisque non mi
+                  sagittis, blandit nibh a, facilisis velit. In id purus in
+                  massa sodales sollicitudin sed eu lacus.
+                </p>
+              </div>
+              <div
+                class="post__comment bg-[#fff] pt-[33px] pb-[32px] px-[40px] rounded-[4px] relative overflow-hidden"
+              >
+                <h3
+                  class="text-[22px] leading-[32px] text-[#010f2e] font-['Jost', sans-serif] font-bold"
+                >
+                  "Nullam consequat, nisi non vulputate venenatis, imperdiet
+                  risus, quis sollicitudin ipsum nulla accumsan sapien".
+                </h3>
+                <img
+                  class="float-right w-[42px] h-[38px]"
+                  src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/double-quote-2.png"
+                />
+              </div>
+              <div>
+                <p
+                  class="text-[14px] leading-[24px] font-normal text-[#777777] mb-[12px]"
+                >
+                  Curabitur aliquet suscipit ipsum sit amet condimentum. Nunc
+                  pellentesque sapien sed velit condimentum, nec euismod ipsum
+                  ultrices. Donec eget congue augue, nec gravida diam. Curabitur
+                  a lacinia tortor, sit amet congue mi. Praesent a sollicitudin
+                  massa.
+                </p>
+              </div>
+              <div class="pl-[32px] mb-[23px]">
+                <div class="row">
+                  <div class="grid grid-cols-12">
+                    <div class="col-span-12 md:col-span-6">
+                      <div
+                        class="flex items-start gap-3 items-center mb-[17px]"
+                      >
+                        <div class="flex-shrink-0">
+                          <div
+                            class="w-[35px] h-[35px] rounded-full post__item flex items-center justify-center"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-[20px] w-[20px] text-white"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <p class="text-[#010f2e] pr-[30px] text-[15px]">
+                          Phasellus scelerisque vitae risus ornare eleifend.
+                          Vestibulum sed imperdiet risus.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-6">
+                      <div
+                        class="flex items-start gap-3 items-center mb-[17px]"
+                      >
+                        <div class="flex-shrink-0">
+                          <div
+                            class="w-[35px] h-[35px] rounded-full post__item flex items-center justify-center"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-[20px] w-[20px] text-white"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <p class="text-[#010f2e] pr-[30px] text-[15px]">
+                          Phasellus scelerisque vitae risus ornare eleifend.
+                          Vestibulum sed imperdiet risus.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-6">
+                      <div
+                        class="flex items-start gap-3 items-center mb-[17px]"
+                      >
+                        <div class="flex-shrink-0">
+                          <div
+                            class="w-[35px] h-[35px] rounded-full post__item flex items-center justify-center"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-[20px] w-[20px] text-white"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <p class="text-[#010f2e] pr-[30px] text-[15px]">
+                          Etiam vestibulum neque quis pellentesque tempor ullam
+                          consequat.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-6">
+                      <div
+                        class="flex items-start gap-3 items-center mb-[17px]"
+                      >
+                        <div class="flex-shrink-0">
+                          <div
+                            class="w-[35px] h-[35px] rounded-full post__item flex items-center justify-center"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-[20px] w-[20px] text-white"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <p class="text-[#010f2e] pr-[30px] text-[15px]">
+                          Etiam vestibulum neque quis pellentesque tempor ullam
+                          consequat.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-6">
+                      <div
+                        class="flex items-start gap-3 items-center mb-[17px]"
+                      >
+                        <div class="flex-shrink-0">
+                          <div
+                            class="w-[35px] h-[35px] rounded-full post__item flex items-center justify-center"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-[20px] w-[20px] text-white"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <p class="text-[#010f2e] pr-[30px] text-[15px]">
+                          Proin tellus ante, laoreet sit amet risus sed,
+                          placerat euismod sem.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-6">
+                      <div
+                        class="flex items-start gap-3 items-center mb-[17px]"
+                      >
+                        <div class="flex-shrink-0">
+                          <div
+                            class="w-[35px] h-[35px] rounded-full post__item flex items-center justify-center"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-[20px] w-[20px] text-white"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <p class="text-[#010f2e] pr-[30px] text-[15px]">
+                          Proin tellus ante, laoreet sit amet risus sed,
+                          placerat euismod sem.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p
+                  class="text-[14px] leading-[24px] font-normal text-[#777777] mb-[12px]"
+                >
+                  Curabitur eleifend ultricies nibh quis hendrerit. Sed rhoncus
+                  magna non purus feugiat, eget convallis ipsum semper. Donec ut
+                  dui et est lobortis cursus quis nec libero. Curabitur ac
+                  faucibus nisi. Ut imperdiet auctor dui, eget tempor quam
+                  dapibus ac. Phasellus lacinia metus maximus velit finibus
+                  condimentum.
+                </p>
+                <p
+                  class="text-[14px] leading-[24px] font-normal text-[#777777] mb-[12px]"
+                >
+                  Nullam malesuada lobortis risus, in varius ligula iaculis at.
+                  Aenean pharetra, massa vitae facilisis bibendum, odio felis
+                  rhoncus velit, eget scelerisque magna ante sit amet tortor.
+                  Donec sed blandit justo. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Pellentesque porta, lacus id
+                  vulputate dictum, nisl felis faucibus massa, sed congue ex
+                  quam vitae magna.
+                </p>
+                <p
+                  class="text-[14px] leading-[24px] font-normal text-[#777777] mb-[12px]"
+                >
+                  Aenean ut elit placerat est vulputate blandit. Nunc elit nibh,
+                  euismod sit amet erat vel, varius elementum orci. Integer sit
+                  amet interdum orci. Quisque hendrerit sagittis nisi, eu
+                  dapibus lorem imperdiet ac. Donec congue dictum elit ac
+                  pharetra. Aliquam dictum turpis libero. Nulla eu sodales orci.
+                </p>
+              </div>
+              <div>
+                <div
+                  class="flex items-center flex-wrap justify-between border-t border-dashed border-[#777777] py-4"
+                >
+                  <!-- Tags Section -->
+                  <div class="flex items-center gap-2">
+                    <div class="flex items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 mr-1 text-[#010f2e]"
+                        fill="#000"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A2 2 0 013 12V7a4 4 0 014-4z"
+                        />
+                      </svg>
+                      <span class="font-medium text-[#010f2e] mr-[10px]"
+                        >Tag:</span
+                      >
+                    </div>
+                    <div class="flex">
+                      <a
+                        class="px-4 py-1 rounded-[4px] border border-[1px] border-[#777777] text-sm text-gray-600 hover:bg-[#f0a80e] hover:border-[#f0a80e] hover:text-[#fff] cursor-pointer mr-[15px] text-[#777777]"
+                      >
+                        Business
+                      </a>
+                      <a
+                        class="px-4 py-1 rounded-[4px] border border-[1px] border-[#777777] text-sm text-gray-600 hover:bg-[#f0a80e] hover:border-[#f0a80e] hover:text-[#fff] cursor-pointer mr-[15px] text-[#777777]"
+                      >
+                        News
+                      </a>
+                      <a
+                        class="px-4 py-1 rounded-[4px] border border-[1px] border-[#777777] text-sm text-gray-600 hover:bg-[#f0a80e] hover:border-[#f0a80e] hover:text-[#fff] cursor-pointer mr-[15px] text-[#777777]"
+                      >
+                        Brand
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Social Media Icons -->
+                  <div class="flex flex-wrap items-center gap-3 mt-[20px]">
+                    <a
+                      href="#"
+                      class="socical__link w-10 h-10 rounded-full bg-[#FFF1E9] flex items-center justify-center transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-[16px] w-[16px] text-[#f67a30]"
+                        fill="currentColor"
+                        viewBox="0 0 320 512"
+                      >
+                        <path
+                          d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 6 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="#"
+                      class="socical__link w-10 h-10 rounded-full bg-[#FFE9E9] flex items-center justify-center transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-[16px] w-[16px] text-[#f67a30]"
+                        fill="currentColor"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="#"
+                      class="socical__link w-10 h-10 rounded-full bg-[#FFE9E9] flex items-center justify-center transition-colors"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-[16px] w-[16px] text-[#f67a30]"
+                        fill="currentColor"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-[115px]">
+                <span
+                  class="text-[22px] leading-[25px] text-[#f56915] font-bold uppercase mb-[11px]"
+                  >OUR BLOG</span
+                >
+                <h3
+                  class="text-[40px] md:text-[65px] leading-[75px] text-[#010f2e] mb-[32px] font-bold"
+                >
+                  Related Blog
+                </h3>
+                <div>
+                  <div class="grid grid-cols-12 gap-6">
+                    <!-- Blog Card 1 -->
+                    <div
+                      class="col-span-12 md:col-span-6 card__item bg-white rounded-[4px] overflow-hidden shadow-sm"
+                    >
+                      <div class="relative">
+                        <img
+                          src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/blog-img2.jpg"
+                          alt="Business Meeting"
+                          class="w-full h-[250px] object-cover"
+                        />
+                        <!-- Date Badge -->
+                        <div
+                          class="absolute top-4 left-4 bg-[#f67a30] text-white px-4 py-2 rounded flex items-center gap-2"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                            class="w-[15px] h-[15px] fill-current"
+                          >
+                            <path
+                              d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
+                            ></path>
+                          </svg>
+                          7 March, 2024
+                        </div>
+                      </div>
+
+                      <div class="pt-[26px] pb-[30px] px-[35px]">
+                        <h3
+                          class="text-[25px] md:text-[23px] text-[#010f2e] leading-[35px] mb-[11px] font-bold hover:text-[#f56915]"
+                        >
+                          <a class="cursor-pointer">
+                            Maecenas non libero in nisi commodo.</a
+                          >
+                        </h3>
+                        <p class="text-[#777777] text-[15px] mb-[12px]">
+                          Cras a erat vitae ex rutrum venenatis ut a nunc.
+                          Praesent turpis ipsum, maximus vitae lectus ut,
+                          sodales cursus leo.
+                        </p>
+                        <a
+                          href="#"
+                          class="text-[#f67a30] font-bold flex items-center gap-2 underline hover:text-[#010f2e]"
+                        >
+                          READ MORE
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-4 w-4"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- Blog Card 2 -->
+                    <div
+                      class="col-span-12 md:col-span-6 card__item bg-white rounded-[4px] overflow-hidden shadow-sm"
+                    >
+                      <div class="relative">
+                        <img
+                          src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/blog-img3.jpg"
+                          alt="Business Handshake"
+                          class="w-full h-[250px] object-cover"
+                        />
+                        <!-- Date Badge -->
+                        <div
+                          class="absolute top-4 left-4 bg-[#f67a30] text-white px-4 py-2 rounded flex items-center gap-2"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                            class="w-[15px] h-[15px] fill-current"
+                          >
+                            <path
+                              d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
+                            ></path>
+                          </svg>
+                          7 March, 2024
+                        </div>
+                      </div>
+
+                      <div class="pt-[26px] pb-[30px] px-[35px]">
+                        <h3
+                          class="text-[25px] md:text-[23px] text-[#010f2e] leading-[35px] mb-[11px] font-bold hover:text-[#f56915]"
+                        >
+                          <a class="cursor-pointer"
+                            >The Biggest Contribution Of Corporate.</a
+                          >
+                        </h3>
+                        <p class="text-[#777777] text-[15px] mb-[12px]">
+                          Cras a erat vitae ex rutrum venenatis ut a nunc.
+                          Praesent turpis ipsum, maximus vitae lectus ut,
+                          sodales cursus leo.
+                        </p>
+                        <a
+                          href="#"
+                          class="text-[#f67a30] font-bold flex items-center gap-2 hover:text-[#010f2e] underline"
+                        >
+                          READ MORE
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-4 w-4"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-[115px]">
+                <span
+                  class="text-[22px] leading-[25px] text-[#f56915] font-bold uppercase mb-[11px]"
+                  >POST REVIEW</span
+                >
+                <h3
+                  class="text-[40px] md:text-[65px] leading-[75px] text-[#010f2e] mb-[32px] font-bold"
+                >
+                  Comments
+                </h3>
+                <div>
+                  <div class="space-y-8">
+                    <div class="grid grid-col-12">
+                      <div class="col-span-12 mb-[20px]">
+                        <div
+                          class="comment__item flex flex-col md:flex-row gap-4 p-[5px] items-center"
+                        >
+                          <img
+                            src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/detail-comment-img1.jpg"
+                            alt="Jhone Doe"
+                            class=""
+                          />
+                          <div class="flex-1">
+                            <div class="flex justify-between items-center mb-2">
+                              <h4
+                                class="text-[20px] leading-[30px] mb-[10px] font-bold text-[#010f2e] w-full text-center md:text-left"
+                              >
+                                Jhone Doe
+                              </h4>
+                            </div>
+                            <p
+                              class="text-[#777777] text-[15px] leading-[24px] mb-[12px]"
+                            >
+                              Donec arcu est, ullamcorper sed ultrices vitae,
+                              fringilla sodales lacus. Phasellus blandit
+                              porttitor risus, et faucibus nisi.
+                            </p>
+                            <button
+                              class="text-[#f56915] text-[15px] font-bold hover:text-[#f0a80e] flex items-center gap-[6px] w-full justify-center md:justify-start"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-[20px] w-[20px]"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"
+                                />
+                              </svg>
+                              REPLY
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-span-12 mb-[20px]">
+                        <div
+                          class="comment__item flex flex-col md:flex-row gap-4 p-[5px] items-center ml-[0px] md:ml-[60px]"
+                        >
+                          <img
+                            src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/detail-comment-img2.jpg"
+                            alt="Jhone Doe"
+                            class=""
+                          />
+                          <div class="flex-1">
+                            <div class="flex justify-between items-center mb-2">
+                              <h4
+                                class="text-[20px] leading-[30px] mb-[10px] font-bold text-[#010f2e] w-full text-center md:text-left"
+                              >
+                                Shila Rosa
+                              </h4>
+                            </div>
+                            <p
+                              class="text-[#777777] text-[15px] leading-[24px] mb-[12px]"
+                            >
+                              Donec arcu est, ullamcorper sed ultrices vitae,
+                              fringilla sodales lacus. Phasellus blandit
+                              porttitor risus, et faucibus nisi.
+                            </p>
+                            <button
+                              class="text-[#f56915] text-[15px] font-bold hover:text-[#f0a80e] flex items-center gap-[6px] w-full justify-center md:justify-start"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-[20px] w-[20px]"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"
+                                />
+                              </svg>
+                              REPLY
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-span-12 mb-[20px]">
+                        <div
+                          class="comment__item flex flex-col md:flex-row gap-4 p-[5px] items-center"
+                        >
+                          <img
+                            src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/detail-comment-img3.jpg"
+                            alt="Jhone Doe"
+                            class=""
+                          />
+                          <div class="flex-1">
+                            <div class="flex justify-between items-center mb-2">
+                              <h4
+                                class="text-[20px] leading-[30px] mb-[10px] font-bold text-[#010f2e] w-full text-center md:text-left"
+                              >
+                                Boni Joye
+                              </h4>
+                            </div>
+                            <p
+                              class="text-[#777777] text-[15px] leading-[24px] mb-[12px]"
+                            >
+                              Donec arcu est, ullamcorper sed ultrices vitae,
+                              fringilla sodales lacus. Phasellus blandit
+                              porttitor risus, et faucibus nisi.
+                            </p>
+                            <button
+                              class="text-[#f56915] text-[15px] font-bold hover:text-[#f0a80e] flex items-center gap-[6px] w-full justify-center md:justify-start"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-[20px] w-[20px]"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"
+                                />
+                              </svg>
+                              REPLY
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-[113px]">
+                <span
+                  class="text-[22px] leading-[25px] text-[#f56915] font-bold uppercase mb-[11px]"
+                  >REPLY NOW</span
+                >
+                <h3
+                  class="text-[40px] md:text-[65px] leading-[75px] text-[#010f2e] mb-[32px] font-bold"
+                >
+                  Leave A Reply
+                </h3>
+                <div>
+                  <form class="max-w-full">
+                    <div class="grid grid-cols-12 gap-5 mb-5">
+                      <div class="col-span-12 lg:col-span-3">
+                        <input
+                          type="text"
+                          placeholder="First Name"
+                          class="w-full px-4 py-3 border border-[#b7b7b7] rounded outline-none text-[#777777] text-[15px] placeholder-[#777777]"
+                        />
+                      </div>
+                      <div class="col-span-12 lg:col-span-3">
+                        <input
+                          type="text"
+                          placeholder="Last Name"
+                          class="w-full px-4 py-3 border border-[#b7b7b7] rounded outline-none text-[#777777] text-[15px] placeholder-[#777777]"
+                        />
+                      </div>
+                      <div class="col-span-12 lg:col-span-3">
+                        <input
+                          type="email"
+                          placeholder="Email Address"
+                          class="w-full px-4 py-3 border border-[#b7b7b7] rounded outline-none text-[#777777] text-[15px] placeholder-[#777777]"
+                        />
+                      </div>
+                    </div>
+                    <div class="mb-5">
+                      <textarea
+                        rows="6"
+                        placeholder="Message"
+                        class="w-full h-[120px] px-4 py-3 border border-[#b7b7b7] rounded resize-none outline-none text-[#777777] placeholder-[#777777]"
+                      ></textarea>
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="btn__reply h-[60px] px-[32px] py-[15px] text-white font-bold rounded hover:bg-[#e56a20] transition-colors"
+                    >
+                      POST NOW
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Sidebar -->
+          <div class="col-span-12 lg:col-span-3 order-3 md:order-3">
+            <div class="relative mb-[32px] p-[20px]">
+              <img
+                src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/advertising-img.jpg"
+                alt="Business Meeting"
+                class="w-full h-[370px] object-cover rounded-[4px]"
+              />
+              <div
+                class="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-[50%] w-[100% - 100px] h-[165px] bg-[#f67a30]/90 flex items-center justify-center p-[10px]"
+              >
+                <h2 class="text-[28px] font-bold text-white">Advertising</h2>
+              </div>
+            </div>
+
+            <!-- Tags -->
+            <div class="rounded-lg p-6 mb-8">
+              <h2
+                class="tag__heading relative text-[30px] leading-[35px] text-[#010f2e] font-bold mb-[30px] pb-[4px]"
+              >
+                Tages
+              </h2>
+              <div class="flex flex-wrap gap-3">
+                <span
+                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
+                >
+                  Business
+                </span>
+                <span
+                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
+                >
+                  News
+                </span>
+                <span
+                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
+                >
+                  Brand
+                </span>
+                <span
+                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
+                >
+                  Website
+                </span>
+                <span
+                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
+                >
+                  Internal
+                </span>
+                <span
+                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
+                >
+                  Strategy
+                </span>
+                <span
+                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
+                >
+                  Brand
+                </span>
+                <span
+                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
+                >
+                  Mission
+                </span>
+              </div>
+            </div>
+
+            <!-- Gallery -->
+            <div class="p-[20px]">
+              <h2
+                class="tag__heading relative text-[30px] leading-[35px] text-[#010f2e] font-bold mb-[30px] pb-[4px]"
+              >
+                Gallery
+              </h2>
+              <div class="row">
+                <div class="grid grid-cols-12 gap-4">
+                  <div class="col-span-4">
+                    <img
+                      src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/gallery-img1.jpg"
+                      alt=""
+                      class="w-full h-24 object-cover rounded"
+                    />
+                  </div>
+                  <div class="col-span-4">
+                    <img
+                      src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/gallery-img2.jpg"
+                      alt=""
+                      class="w-full h-24 object-cover rounded"
+                    />
+                  </div>
+                  <div class="col-span-4">
+                    <img
+                      src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/gallery-img3.jpg"
+                      alt=""
+                      class="w-full h-24 object-cover rounded"
+                    />
+                  </div>
+                  <div class="col-span-4">
+                    <img
+                      src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/gallery-img4.jpg"
+                      alt=""
+                      class="w-full h-24 object-cover rounded"
+                    />
+                  </div>
+                  <div class="col-span-4">
+                    <img
+                      src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/gallery-img5.jpg"
+                      alt=""
+                      class="w-full h-24 object-cover rounded"
+                    />
+                  </div>
+                  <div class="col-span-4">
+                    <img
+                      src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/gallery-img6.jpg"
+                      alt=""
+                      class="w-full h-24 object-cover rounded"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
