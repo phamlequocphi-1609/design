@@ -16,1167 +16,912 @@
       <div class="row">
         <div class="grid grid-cols-12">
           <!-- Left Sidebar -->
-          <div class="col-span-12 lg:col-span-3 order-2 md:order-2 lg:order-1">
-            <!-- Search Section -->
-            <div class="p-[20px]">
-              <h2
-                class="search__heading relative text-[26px] text-[#010f2e] font-bold pb-[4px] mb-[30px]"
-              >
-                Search
-              </h2>
-              <div
-                class="flex w-full h-[60px] bg-[#fff] p-[10px] search-container"
-              >
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  class="search-input pr-[20px] pl-[10px]"
-                />
-                <button class="search-button">
+          <div
+            class="col-span-12 lg:col-span-3 order-2 md:order-2 lg:order-1 p-[10px] ]"
+          >
+            <div
+              class="rounded-lg pt-[26px] pr-[19px] hover:border hover:border-[#dadada] cursor-pointer rounded-[8px] md:hidden lg:block"
+            >
+              <div class="flex items-center justify-between pl-[19px]">
+                <h2 class="text-[14px] font-bold text-[#3a3a3a]">Nội dung</h2>
+                <div
+                  class="w-[20px] h-[20px] bg-[#7c0fd1] rounded-[50%] relative"
+                >
                   <svg
+                    class="w-[16px] absolute top-[3px] left-[2px]"
+                    fill="#fff"
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+                    viewBox="0 0 512 512"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
                     />
                   </svg>
-                </button>
-              </div>
-            </div>
-            <!-- Recent Posts -->
-            <div class="p-[20px]">
-              <h2
-                class="post__heading relative font-bold mb-4 text-[26px] text-[#010f2e]"
-              >
-                Recent Post
-              </h2>
-              <div class="recent-posts sm:mx-[0px]">
-                <div class="row">
-                  <div class="grid-cols-12">
-                    <div class="col-span-12 mb-[20px]">
-                      <div class="post-item">
-                        <img
-                          src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/recent-post-img1.jpg"
-                          alt="Post Thumbnail"
-                          class="post-image"
-                        />
-                        <div class="post-content">
-                          <a class="post-title text-[24px] lg:text-[16px]"
-                            >Maecenas ac imperdiet purus, in tempor.</a
-                          >
-                          <p class="post-date text-[22px] lg:text-[14px]">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 448 512"
-                              class="w-[28px] h-[28px] lg:w-[14px] lg:h-[14px]"
-                            >
-                              <path
-                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
-                              />
-                            </svg>
-                            4 May, 2024
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-span-12 mb-[20px]">
-                      <div class="post-item">
-                        <img
-                          src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/recent-post-img2.jpg"
-                          alt="Post Thumbnail"
-                          class="post-image"
-                        />
-                        <div class="post-content">
-                          <a class="post-title text-[24px] lg:text-[16px]"
-                            >Things That Make You Lovable Hate.</a
-                          >
-                          <p class="post-date text-[22px] lg:text-[14px]">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 448 512"
-                              class="w-[28px] h-[28px] lg:w-[14px] lg:h-[14px]"
-                            >
-                              <path
-                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
-                              />
-                            </svg>
-                            12 June, 2024
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-span-12 mb-[20px]">
-                      <div class="post-item">
-                        <img
-                          src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/recent-post-img3.jpg"
-                          alt="Post Thumbnail"
-                          class="post-image"
-                        />
-                        <div class="post-content">
-                          <a class="post-title text-[24px] lg:text-[16px]"
-                            >Understand Corporate Business Before You.</a
-                          >
-                          <p class="post-date text-[22px] lg:text-[14px]">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 448 512"
-                              class="w-[28px] h-[28px] lg:w-[14px] lg:h-[14px]"
-                            >
-                              <path
-                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
-                              />
-                            </svg>
-                            28 April, 2024
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-span-12 mb-[20px]">
-                      <div class="post-item">
-                        <img
-                          src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/recent-post-img3.jpg"
-                          alt="Post Thumbnail"
-                          class="post-image"
-                        />
-                        <div class="post-content">
-                          <a class="post-title text-[24px] lg:text-[16px]"
-                            >Understand Corporate Business Before You.</a
-                          >
-                          <p class="post-date text-[22px] lg:text-[14px]">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 448 512"
-                              class="w-[28px] h-[28px] lg:w-[14px] lg:h-[14px]"
-                            >
-                              <path
-                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
-                              />
-                            </svg>
-                            28 April, 2024
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-span-12 mb-[20px]">
-                      <div class="post-item">
-                        <img
-                          src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/recent-post-img4.jpg"
-                          alt="Post Thumbnail"
-                          class="post-image"
-                        />
-                        <div class="post-content">
-                          <a class="post-title text-[24px] lg:text-[16px]"
-                            >Learn The Truth About Corporate.</a
-                          >
-                          <p class="post-date text-[22px] lg:text-[14px]">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 448 512"
-                              class="w-[28px] h-[28px] lg:w-[14px] lg:h-[14px]"
-                            >
-                              <path
-                                d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
-                              />
-                            </svg>
-                            9 August, 2024
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Category -->
-            <div class="p-[20px]">
-              <h2
-                class="post__heading relative font-bold mb-4 text-[26px] text-[#010f2e]"
-              >
-                Category
-              </h2>
-              <div class="category-list text-[#777777]">
-                <div class="category-item mb-[10px]">
-                  <a href="#" class="category-link">
-                    <span class="category-name flex items-center text-[15px]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 320 512"
-                        fill="#777777"
-                        class="w-[10px] h-[10px] mr-[8px]"
-                      >
-                        <path
-                          d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
-                        />
-                      </svg>
-                      Design</span
-                    >
-                    <span class="category-count">05</span>
-                  </a>
-                </div>
-                <div class="category-item mb-[10px]">
-                  <a href="#" class="category-link">
-                    <span class="category-name flex items-center text-[15px]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 320 512"
-                        fill="#777777"
-                        class="w-[10px] h-[10px] mr-[8px]"
-                      >
-                        <path
-                          d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
-                        />
-                      </svg>
-                      Development</span
-                    >
-                    <span class="category-count">05</span>
-                  </a>
-                </div>
-                <div class="category-item mb-[10px]">
-                  <a href="#" class="category-link">
-                    <span class="category-name flex items-center text-[15px]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 320 512"
-                        fill="#777777"
-                        class="w-[10px] h-[10px] mr-[8px]"
-                      >
-                        <path
-                          d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
-                        />
-                      </svg>
-                      Marketing</span
-                    >
-                    <span class="category-count">05</span>
-                  </a>
-                </div>
-                <div class="category-item mb-[10px]">
-                  <a href="#" class="category-link">
-                    <span class="category-name flex items-center text-[15px]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 320 512"
-                        fill="#777777"
-                        class="w-[10px] h-[10px] mr-[8px]"
-                      >
-                        <path
-                          d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
-                        />
-                      </svg>
-                      Business</span
-                    >
-                    <span class="category-count">05</span>
-                  </a>
-                </div>
-                <div class="category-item mb-[10px]">
-                  <a href="#" class="category-link">
-                    <span class="category-name flex items-center text-[15px]">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 320 512"
-                        fill="#777777"
-                        class="w-[10px] h-[10px] mr-[8px]"
-                      >
-                        <path
-                          d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
-                        />
-                      </svg>
-                      Branding</span
-                    >
-                    <span class="category-count">05</span>
-                  </a>
-                </div>
-              </div>
+              <ul class="mt-[20px] pl-[19px] pr-[6px]">
+                <li>
+                  <a
+                    href="#"
+                    class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
+                    >Website là gì?</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
+                    >Cấu tạo và cách hoạt động của website như thế nào?</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
+                    >Những trang quan trọng nhất trong website là gì?</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
+                    >Các thành phần cơ bản của website là gì?</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
+                    >Phân loại website phổ biến hiện nay</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
+                    >Tại sao doanh nghiệp cần phải thiết kế website?</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
 
           <!-- Main Content -->
-          <div class="col-span-12 lg:col-span-6 order-1 md:order-1 lg:order-2">
-            <div class="p-[20px]">
-              <div class="relative h-[400px] mb-6 group">
+          <div
+            class="col-span-12 lg:col-span-6 order-1 md:order-1 lg:order-2 p-[10px]"
+          >
+            <div>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px]">
+                <strong>Website là gì?</strong>
+                Đây chắc chắn là thuật ngữ không còn xa lạ với nhiều người dùng
+                internet. Website được xem là công cụ để giới thiệu về doanh
+                nghiệp, quảng bá thương hiệu, bán hàng, cung cấp thông tin cập
+                nhật mới nhất cho người xem,… Nhưng sự thật về bản chất của
+                website, cũng như cách thức hoạt động và lợi ích chi tiết mà các
+                trang web mang lại thì không phải ai cũng hiểu hết. Ở bài viết
+                hôm nay,<a
+                  href="https://mona.media/"
+                  target="_blank"
+                  rel="noopener"
+                  data-wpel-link="internal"
+                  class="text-[#7c0fd1]"
+                  ><strong> MONA Media</strong></a
+                >
+                sẽ giúp bạn giải đáp tất cả các thắc mắc này!
+              </p>
+              <h2 class="text-[#7c0fd1] text-[32px] font-[700] my-[20px]">
+                Website là gì?
+              </h2>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                <strong>Website</strong> là một trang mạng trong mạng toàn cầu
+                (<strong
+                  ><a
+                    href="https://mona.media/www-la-gi/"
+                    target="_blank"
+                    rel="noopener"
+                    data-wpel-link="internal"
+                    class="text-[#7c0fd1]"
+                    >World Wide Web</a
+                  ></strong
+                >) và được định dạng bằng ngôn ngữ đánh dấu siêu văn bản
+                <strong
+                  ><a
+                    href="https://mona.media/ngon-ngu-html-la-gi/"
+                    target="_blank"
+                    rel="noopener"
+                    data-wpel-link="internal"
+                    class="text-[#7c0fd1]"
+                    >HTML</a
+                  ></strong
+                >.&nbsp; Mỗi trang web có thể chứa nội dung văn bản, hình ảnh,
+                video, âm thanh và các phương tiện truyền thông khác được trình
+                bày dưới dạng trang web đơn lẻ hoặc theo các trang liên kết với
+                nhau,… và sử dụng
+                <strong
+                  ><a
+                    href="https://mona.media/https-la-gi/"
+                    target="_blank"
+                    rel="noopener"
+                    data-wpel-link="internal"
+                    class="text-[#7c0fd1]"
+                    >giao thức HTTP</a
+                  ></strong
+                >
+                để truyền tải và chia sẻ dữ liệu.
+              </p>
+              <div>
                 <img
-                  src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/blog-img1.jpg"
+                  src="https://mona.media/wp-content/uploads/2023/03/website-400x263.png"
                   alt=""
-                  class="w-full h-full object-cover rounded-[4px]"
+                  class="w-[100%] rounded-[10px]"
                 />
-
-                <button
-                  class="btn__previous absolute left-4 top-1/2 -translate-y-1/2 w-[50px] h-[50px] bg-white rounded-[4px] flex items-center justify-center transition-opacity duration-300"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 320 512"
-                    fill="#fff"
-                    class="w-[15px] h-[15px]"
-                  >
-                    <path
-                      d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
-                    />
-                  </svg>
-                </button>
-                <button
-                  class="btn__next absolute right-4 top-1/2 -translate-y-1/2 w-[50px] h-[50px] bg-white rounded-[4px] flex items-center justify-center transition-opacity duration-300"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 320 512"
-                    fill="#fff"
-                    class="w-[15px] h-[15px]"
-                  >
-                    <path
-                      d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
-                    />
-                  </svg>
-                </button>
-
-                <!-- Date and Admin badges -->
-                <div class="absolute bottom-4 left-4 flex items-center gap-2">
-                  <a
-                    class="calendar__link text-white px-[20px] py-[5px] rounded text-sm flex items-center gap-1 cursor-pointer"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                      class="w-[15px] h-[15px] fill-current"
-                    >
-                      <path
-                        d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
-                      ></path>
-                    </svg>
-                    7 March, 2024
-                  </a>
-                  <a
-                    class="admin__link text-white px-[20px] py-[5px] rounded text-sm flex items-center gap-1 cursor-pointer ml-[20px]"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 448 512"
-                      class="w-[15px] h-[15px] fill-current"
-                    >
-                      <path
-                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
-                      />
-                    </svg>
-                    By Admin
-                  </a>
-                </div>
               </div>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                Thông thường, để truy cập vào website, người dùng sẽ nhập địa
+                chỉ URL của trang web vào thanh địa chỉ của các trình duyệt web
+                như
+                <strong>Google Chrome, Mozilla Firefox hoặc Safari,…</strong>
+                trên mọi nền tảng thiết bị khác nhau, bao gồm cả máy tính bàn,
+                laptop, smartphone. Và các loại website có thể đa dạng từ các
+                trang tin tức, blog, cửa hàng trực tuyến đến các diễn đàn, trang
+                web cá nhân và doanh nghiệp.&nbsp;
+              </p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                Có thể hiểu đơn giản, một website hoàn chỉnh cần phải có một địa
+                chỉ cụ thể và đảm bảo các yếu tố như: Nằm trong hệ thống mạng
+                toàn cầu, có thể truy cập thông qua các trình duyệt web và sử
+                dụng giao thức HTTP để chia sẻ và truyền tải dữ liệu tới người
+                dùng.
+              </p>
+              <h2 class="text-[#7c0fd1] text-[32px] font-[700] my-[20px]">
+                Cấu tạo và cách hoạt động của website như thế nào?
+              </h2>
               <div>
-                <h1
-                  class="text-[25px] leading-[35px] font-bold mb-[11px] text-[#010f2e]"
-                >
-                  Quisque posuere condimentum suscipit sed luctus dolor ut nulla
-                  aliquet, ac eleifend ex cursus.
-                </h1>
-                <p
-                  class="text-[14px] leading-[24px] font-normal text-[#777777] mb-[12px]"
-                >
-                  Quisque posuere condimentum suscipit. Sed luctus dolor ut
-                  nulla aliquet, ac eleifend ex cursus. Vivamus vitae eleifend
-                  leo, sed vehicula turpis. Donec egestas tincidunt quam
-                  vestibulum sagittis. Etiam maximus vel felis sit amet aliquet.
-                  Donec accumsan velit nec iaculis viverra.
-                </p>
-                <p
-                  class="text-[14px] leading-[24px] font-normal text-[#777777] mb-[12px]"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque orci dolor, dictum non lacus accumsan, tempus
-                  tristique libero. Proin dolor lectus, dapibus in vehicula vel,
-                  dapibus a odio. Nam bibendum facilisis vulputate. Nunc
-                  sagittis laoreet leo, nec sagittis urna. Quisque non mi
-                  sagittis, blandit nibh a, facilisis velit. In id purus in
-                  massa sodales sollicitudin sed eu lacus.
-                </p>
-              </div>
-              <div
-                class="post__comment bg-[#fff] pt-[33px] pb-[32px] px-[40px] rounded-[4px] relative overflow-hidden"
-              >
-                <h3
-                  class="text-[22px] leading-[32px] text-[#010f2e] font-['Jost', sans-serif] font-bold"
-                >
-                  "Nullam consequat, nisi non vulputate venenatis, imperdiet
-                  risus, quis sollicitudin ipsum nulla accumsan sapien".
-                </h3>
                 <img
-                  class="float-right w-[42px] h-[38px]"
-                  src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/double-quote-2.png"
+                  src="https://mona.media/wp-content/uploads/2024/02/cau-tao-va-hoat-dong-cua-website.jpg"
+                  alt=""
+                  class="w-[100%] rounded-[10px]"
                 />
               </div>
-              <div>
-                <p
-                  class="text-[14px] leading-[24px] font-normal text-[#777777] mb-[12px]"
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                Một website thông thường sẽ bao gồm nhiều trang con (webpage)
+                dưới dạng tập tin HTML hoặc XHTML và được lưu trữ tại máy chủ
+                (<strong
+                  ><a
+                    href="https://mona.media/web-server-la-gi/"
+                    target="_blank"
+                    rel="noopener"
+                    data-wpel-link="internal"
+                    class="text-[#7c0fd1]"
+                    >web server</a
+                  ></strong
+                >).
+              </p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                Cụ thể, các máy tính từ nhiều địa điểm khác nhau có thể truy cập
+                vào trang web này thông qua trình duyệt web, kết nối qua
+                Internet để tải các tệp tin từ máy chủ và hiển thị chúng cho
+                người dùng. Trang web được hiển thị thông qua các trình duyệt
+                như Safari, Chrome, Cốc Cốc, v.v.
+              </p>
+              <p class="text-[#5f5f5f] text-[14.4px] leading-[28px] my-[20px]">
+                <strong
+                  >Để website hoạt động trên Internet, cần có ba yếu tố
+                  chính:</strong
                 >
-                  Curabitur aliquet suscipit ipsum sit amet condimentum. Nunc
-                  pellentesque sapien sed velit condimentum, nec euismod ipsum
-                  ultrices. Donec eget congue augue, nec gravida diam. Curabitur
-                  a lacinia tortor, sit amet congue mi. Praesent a sollicitudin
-                  massa.
-                </p>
-              </div>
-              <div class="pl-[32px] mb-[23px]">
-                <div class="row">
-                  <div class="grid grid-cols-12">
-                    <div class="col-span-12 md:col-span-6">
-                      <div
-                        class="flex items-start gap-3 items-center mb-[17px]"
-                      >
-                        <div class="flex-shrink-0">
-                          <div
-                            class="w-[35px] h-[35px] rounded-full post__item flex items-center justify-center"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class="h-[20px] w-[20px] text-white"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <p class="text-[#010f2e] pr-[30px] text-[15px]">
-                          Phasellus scelerisque vitae risus ornare eleifend.
-                          Vestibulum sed imperdiet risus.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-span-12 md:col-span-6">
-                      <div
-                        class="flex items-start gap-3 items-center mb-[17px]"
-                      >
-                        <div class="flex-shrink-0">
-                          <div
-                            class="w-[35px] h-[35px] rounded-full post__item flex items-center justify-center"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class="h-[20px] w-[20px] text-white"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <p class="text-[#010f2e] pr-[30px] text-[15px]">
-                          Phasellus scelerisque vitae risus ornare eleifend.
-                          Vestibulum sed imperdiet risus.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-span-12 md:col-span-6">
-                      <div
-                        class="flex items-start gap-3 items-center mb-[17px]"
-                      >
-                        <div class="flex-shrink-0">
-                          <div
-                            class="w-[35px] h-[35px] rounded-full post__item flex items-center justify-center"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class="h-[20px] w-[20px] text-white"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <p class="text-[#010f2e] pr-[30px] text-[15px]">
-                          Etiam vestibulum neque quis pellentesque tempor ullam
-                          consequat.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-span-12 md:col-span-6">
-                      <div
-                        class="flex items-start gap-3 items-center mb-[17px]"
-                      >
-                        <div class="flex-shrink-0">
-                          <div
-                            class="w-[35px] h-[35px] rounded-full post__item flex items-center justify-center"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class="h-[20px] w-[20px] text-white"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <p class="text-[#010f2e] pr-[30px] text-[15px]">
-                          Etiam vestibulum neque quis pellentesque tempor ullam
-                          consequat.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-span-12 md:col-span-6">
-                      <div
-                        class="flex items-start gap-3 items-center mb-[17px]"
-                      >
-                        <div class="flex-shrink-0">
-                          <div
-                            class="w-[35px] h-[35px] rounded-full post__item flex items-center justify-center"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class="h-[20px] w-[20px] text-white"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <p class="text-[#010f2e] pr-[30px] text-[15px]">
-                          Proin tellus ante, laoreet sit amet risus sed,
-                          placerat euismod sem.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-span-12 md:col-span-6">
-                      <div
-                        class="flex items-start gap-3 items-center mb-[17px]"
-                      >
-                        <div class="flex-shrink-0">
-                          <div
-                            class="w-[35px] h-[35px] rounded-full post__item flex items-center justify-center"
-                          >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class="h-[20px] w-[20px] text-white"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clip-rule="evenodd"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <p class="text-[#010f2e] pr-[30px] text-[15px]">
-                          Proin tellus ante, laoreet sit amet risus sed,
-                          placerat euismod sem.
-                        </p>
-                      </div>
-                    </div>
+              </p>
+              <ul class="space-y-4 list-none">
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <strong class="text-[#5f5f5f]">
+                      Mã nguồn (<a
+                        href="https://mona.media/source-code-la-gi/"
+                        target="_blank"
+                        rel="noopener"
+                        data-wpel-link="internal"
+                        class="text-[#7c0fd1] hover:underline"
+                        >Source Code</a
+                      >)</strong
+                    >: Tập hợp các câu lệnh được lập trình viên thiết kế để xây
+                    dựng trang web.
                   </div>
-                </div>
-              </div>
+                </li>
+
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <strong class="text-[#5f5f5f]">
+                      Lưu trữ web (<a
+                        href="https://mona.media/web-hosting/"
+                        target="_blank"
+                        rel="noopener"
+                        data-wpel-link="internal"
+                        class="text-[#7c0fd1] hover:underline"
+                        >Web Hosting</a
+                      >)</strong
+                    >: Đây là dịch vụ lưu trữ mã nguồn của trang web. Hiệu suất
+                    và mượt mà của trang web thường phụ thuộc vào khả năng lưu
+                    trữ của dịch vụ web hosting.
+                  </div>
+                </li>
+
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <strong class="text-[#5f5f5f]">
+                      Tên miền (<a
+                        href="https://mona.media/domain-la-gi/"
+                        target="_blank"
+                        rel="noopener"
+                        data-wpel-link="internal"
+                        class="text-[#7c0fd1] hover:underline"
+                        >Domain</a
+                      >)</strong
+                    >: Địa chỉ mà người dùng sử dụng để truy cập vào trang web.
+                    Tên miền giúp định danh và dễ nhớ cho trang web.
+                  </div>
+                </li>
+              </ul>
+              <h2 class="text-[#7c0fd1] text-[32px] font-[700] my-[20px]">
+                Những trang quan trọng nhất trong website là gì?
+              </h2>
               <div>
-                <p
-                  class="text-[14px] leading-[24px] font-normal text-[#777777] mb-[12px]"
-                >
-                  Curabitur eleifend ultricies nibh quis hendrerit. Sed rhoncus
-                  magna non purus feugiat, eget convallis ipsum semper. Donec ut
-                  dui et est lobortis cursus quis nec libero. Curabitur ac
-                  faucibus nisi. Ut imperdiet auctor dui, eget tempor quam
-                  dapibus ac. Phasellus lacinia metus maximus velit finibus
-                  condimentum.
-                </p>
-                <p
-                  class="text-[14px] leading-[24px] font-normal text-[#777777] mb-[12px]"
-                >
-                  Nullam malesuada lobortis risus, in varius ligula iaculis at.
-                  Aenean pharetra, massa vitae facilisis bibendum, odio felis
-                  rhoncus velit, eget scelerisque magna ante sit amet tortor.
-                  Donec sed blandit justo. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Pellentesque porta, lacus id
-                  vulputate dictum, nisl felis faucibus massa, sed congue ex
-                  quam vitae magna.
-                </p>
-                <p
-                  class="text-[14px] leading-[24px] font-normal text-[#777777] mb-[12px]"
-                >
-                  Aenean ut elit placerat est vulputate blandit. Nunc elit nibh,
-                  euismod sit amet erat vel, varius elementum orci. Integer sit
-                  amet interdum orci. Quisque hendrerit sagittis nisi, eu
-                  dapibus lorem imperdiet ac. Donec congue dictum elit ac
-                  pharetra. Aliquam dictum turpis libero. Nulla eu sodales orci.
-                </p>
+                <img
+                  src="https://mona.media/wp-content/uploads/2024/02/nhung-trang-quan-trong.jpg"
+                  alt=""
+                  class="w-[100%] rounded-[10px]"
+                />
               </div>
+              <p class="text-[#5f5f5f] text-[14.4px] leading-[28px] my-[20px]">
+                Hiện nay, trên toàn cầu có hàng trăm triệu website, mỗi trang
+                web đều có cấu trúc và nội dung riêng biệt. Tuy nhiên, đối với
+                những website phổ biến, thường có năm loại trang quan trọng sau:
+              </p>
+              <ul class="space-y-4 list-none">
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <strong class="active"><a href="">Trang chủ</a>:</strong>
+                    Đây là giao diện chính của website và của doanh nghiệp trên
+                    Internet. Trang chủ giới thiệu, tóm tắt tất cả những thông
+                    tin quan trọng, nổi bật và tinh tế nhất về website của bạn,
+                    bao gồm đường dẫn tới các trang web quan trọng khác.
+                  </div>
+                </li>
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <strong>Trang giới thiệu &amp; Liên hệ:</strong> Đây là nơi
+                    cung cấp thông tin chi tiết về doanh nghiệp của bạn, kèm
+                    theo lời kêu gọi và thông tin liên hệ cho khách hàng tiềm
+                    năng.
+                  </div>
+                </li>
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <strong>Trang bán hàng:</strong> Trang này giới thiệu chi
+                    tiết về từng sản phẩm/dịch vụ cụ thể, đi kèm với lời kêu gọi
+                    hành động để khuyến khích người dùng mua hàng.
+                  </div>
+                </li>
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <strong>Trang nội dung:</strong> Đây là những trang chứa nội
+                    dung sâu sắc và hữu ích về chủ đề chính của website, thường
+                    liên quan đến sản phẩm/dịch vụ bạn cung cấp. Đây cũng là nơi
+                    giúp khách hàng hiểu rõ hơn về sản phẩm/dịch vụ, từ đó
+                    khuyến khích họ tìm hiểu thêm và thực hiện mua hàng.
+                  </div>
+                </li>
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <strong>Trang liên quan đến quy định pháp lý:</strong> Nhóm
+                    trang này có vai trò quan trọng trong việc xác nhận thông
+                    tin pháp lý liên quan đến website. Bao gồm các trang như
+                    Điều khoản sử dụng, Chính sách bảo mật, Chính sách thanh
+                    toán…
+                  </div>
+                </li>
+              </ul>
+              <h2 class="text-[#7c0fd1] text-[32px] font-[700] my-[20px]">
+                Các thành phần cơ bản của website là gì?
+              </h2>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                Có thể bạn chưa biết độ vững mạnh và ổn định của một trang web
+                sẽ được quyết định bởi các thành phần website của bạn có bố trí
+                hợp lý và hiệu quả hay không. Vì vậy hãy cùng MONA tiếp tục tìm
+                hiểu chi tiết về
+                <strong>các thành phần cơ bản của trang web </strong>ở nội dung
+                dưới đây!
+              </p>
+              <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Header
+              </h3>
               <div>
+                <img
+                  src="https://mona.media/wp-content/uploads/2023/06/header-la-thanh-phan-co-ban-cua-website.jpg"
+                  alt=""
+                  class="w-[100%] rounded-[10px]"
+                />
+              </div>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                <strong>Header</strong> là tên danh mục nằm ở đầu trang, là nơi
+                hiển thị các danh mục con trong trang web để giúp người truy cập
+                có thể dễ dàng nắm bắt các nội dung và các thành phần của
+                website cung cấp.
+              </p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                Bên trong header có chứa các thành phần tạo nên website gồm
+                <strong
+                  >Hotline, Site ID, Home link, Menu định hướng, Giỏ hàng, Hộp
+                  tìm kiếm (Search box)</strong
+                >. Header là một trong những thành phần không thể thiếu của
+                website nói chung và website bán hàng nói riêng. Do đó, một số
+                trang web thường được thiết kế với mục đích đặc biệt, giúp tăng
+                tỷ lệ chuyển đổi khi khách hàng vào website.
+              </p>
+              <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Slider/Carousel
+              </h3>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                <strong>Slider</strong> là thành phần cơ bản của website và
+                thường được đặt bên dưới header. Slider bao gồm những hình ảnh
+                khác nhau, và được cài đặt thêm nút điều hướng giúp người dùng
+                chuyển qua các slide khác một cách dễ dàng hơn.
+              </p>
+              <div>
+                <img
+                  src="https://mona.media/wp-content/uploads/2023/06/thiet-ke-slider-cho-trang-web.jpg"
+                  alt=""
+                  class="w-[100%] rounded-[10px]"
+                />
+              </div>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                <strong>Thiết kế slider</strong> sao cho thật đẹp và hấp dẫn bởi
+                nó là hình ảnh đập vào mắt người truy cập đầu tiên khi vào
+                website của bạn. Slide có thể là những sản phẩm nổi bật được
+                nhiều người yêu thích, các ưu đãi đang sẵn có, hoặc có thể là
+                một video quảng cáo dịch vụ hay sản phẩm của doanh nghiệp bạn
+                cung cấp.
+              </p>
+              <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Content Area (nội dung chính của website)
+              </h3>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                <strong>Content Area</strong> là phần nội dung chính của trang
+                web, đây là phần chứa thông tin nhiều nhất trong các danh mục và
+                cũng là phần quan trọng nhất của website. Ở phần này nội dung
+                cần được trình bày dễ nhìn, dễ đọc, thông tin hay và bổ ích sẽ
+                là một cách giữ chân khách hàng của bạn ở lại trang web lâu hơn.
+              </p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                Nội dung content của mỗi website được thể hiện qua nhiều hình
+                thức khác nhau như hình ảnh, âm thanh, video, văn bản,… Mỗi hình
+                thức thể hiện vừa cung cấp thông tin cho khách hàng, vừa giúp
+                Google đánh giá doanh nghiệp của bạn có cung cấp thông tin hữu
+                ích hay không.
+              </p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                <strong
+                  >Phần nội dung chính của website bao gồm những mục
+                  sau:</strong
+                >
+              </p>
+              <ul class="space-y-4 list-none">
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <strong
+                      >Tiêu đề trang
+                      <a href="#" class="active">(Page title)</a>:</strong
+                    >
+                    Đặt ở đầu của phần nội dung. Tiêu đề thường có font chữ to,
+                    in đậm để người đọc dễ dàng nhận biết được chủ đề của
+                    website đang nói vấn đề gì.
+                  </div>
+                </li>
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <strong
+                      ><a href="" class="active">Breadcrumb</a> navigation
+                      (Breadscrumb trails):</strong
+                    >
+                    Đây là thanh điều hướng phân cấp và giúp người truy cập biết
+                    họ đang ở đâu trong trang web, và có thể di chuyển giữa các
+                    mục nhanh chóng hơn. Khi để ý, bạn có thể thấy được những
+                    trang tin tức thường có thanh điều hướng như vậy, thường đặt
+                    ở đầu nội dung trang. Việc phân cấp chi tiết sẽ giúp Google
+                    đánh giá website của bạn có cấu trúc, giúp dễ tối ưu hơn.
+                  </div>
+                </li>
+              </ul>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                <em><strong>-&gt; Đọc thêm các bài viết liên quan:</strong></em>
+              </p>
+              <ul class="space-y-4 list-none">
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-[16px] ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <em>
+                      <span class="underline active">
+                        <a href=""
+                          >Pagination là gì? Tầm quan trọng của triển khai phân
+                          trang</a
+                        >
+                      </span>
+                    </em>
+                  </div>
+                </li>
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-[16px] ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <em>
+                      <span class="underline active">
+                        <a href=""
+                          >Web Navigation là gì? Nguyên tắc xây dựng Web
+                          Navigation</a
+                        >
+                      </span>
+                    </em>
+                  </div>
+                </li>
+              </ul>
+              <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Sidebar
+              </h3>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                <a
+                  href="https://mona.media/sidebar-la-gi/"
+                  target="_blank"
+                  rel="noopener"
+                  data-wpel-link="internal"
+                  class="active"
+                  ><strong>Sidebar</strong></a
+                >
+                (hay thanh bên) cũng là một thành phần thường được sử dụng nhiều
+                trên website. Mặc dù không quá quan trọng nhưng các thanh bên
+                này sẽ giúp người dùng dễ dàng tiếp cận thêm các thông tin liên
+                quan, các sản phẩm, dịch vụ,… mà không cần phải thay đổi mã code
+                của toàn bộ web.
+              </p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                Vị trí của Sidebar sẽ được đặt tùy vào mục đích của trang. Nhưng
+                thường thì các thanh bên này sẽ được đặt ở cả một hoặc cả ở hai
+                bên website và ở bên cạnh thành phần chính của trang web.&nbsp;
+              </p>
+              <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Footer
+              </h3>
+              <div>
+                <img
+                  src="https://mona.media/wp-content/uploads/2023/06/footers-cua-website.jpg"
+                  alt=""
+                  class="w-[100%] rounded-[10px]"
+                />
+              </div>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                Danh mục website này còn được gọi là
+                <strong>chân trang</strong>. Footers thường được đặt tại vị trí
+                cuối cùng của trang web, hiển thị ở mọi trang của website.
+              </p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                <strong>Chân trang sẽ chứa các thành phần dưới đây:</strong>
+              </p>
+              <ul class="space-y-4 list-none">
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-[16px] ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <span>Thông tin sở hữu bản quyền của website.</span>
+                  </div>
+                </li>
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-[16px] ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <span>Link liên kết</span>
+                  </div>
+                </li>
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-[16px] ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <span>Menu.</span>
+                  </div>
+                </li>
+              </ul>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                Đó là tất cả các thành phần của website cơ bản để tạo nên một
+                trang web hoàn chỉnh. Biết được tên gọi danh mục, các thành phần
+                trong website là gì sẽ giúp bạn dễ dàng hơn trong việc thiết kế,
+                chỉnh sửa, hay tìm kiếm những hỗ trợ trên nhiều nguồn dễ dàng và
+                hiệu quả hơn.
+              </p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                <em
+                  ><strong>-&gt; Xem thêm ngay:</strong>
+                  <a
+                    href="https://mona.media/chinh-sua-footer-trong-wordpress/"
+                    target="_blank"
+                    rel="noopener"
+                    data-wpel-link="internal"
+                    class="active"
+                    >Hướng dẫn chi tiết cách sửa Footer trong WordPress</a
+                  ></em
+                >
+              </p>
+              <h2 class="text-[#7c0fd1] text-[32px] font-[700] my-[20px]">
+                Phân loại website phổ biến hiện nay
+              </h2>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                Sau khi đã tìm hiểu về khái niệm website là gì? Nội dung dưới
+                đây chúng ta sẽ cùng tìm hiểu về các phân loại website hiện nay:
+              </p>
+              <div>
+                <img
+                  src="https://mona.media/wp-content/uploads/2023/06/website-dong-va-website-tinh.jpg"
+                  alt=""
+                  class="w-[100%] rounded-[10px]"
+                />
+              </div>
+              <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Phân loại website theo cấu trúc lập trình
+              </h3>
+              <h4 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Các trang web tĩnh (Static Website)
+              </h4>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                Web tĩnh chính là những trang web cơ bản nhất. Chúng không phải
+                thay đổi nội dung liên tục và không được người dùng cập nhật.
+                Với dạng trang web này, khi muốn thay đổi bất kỳ nội dung gì
+                trên website, người quản lý phải
+                <strong>truy cập trực tiếp vào các mã lệnh</strong> để điều
+                chỉnh, thay đổi thông tin và
+                <span style="text-decoration: underline"
+                  >đòi hỏi cần phải biết lập trình phức tạp</span
+                >. Đa phần, loại trang web này được tạo ra chủ yếu cho mục tiêu
+                giới thiệu thông tin hơn là tương tác thường xuyên.
+              </p>
+              <h4 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Các trang web động (Dynamic Website)
+              </h4>
+              <div>
+                <img
+                  src="https://mona.media/wp-content/uploads/2023/06/website-dong.jpg"
+                  alt=""
+                  class="w-[100%] rounded-[10px]"
+                />
+              </div>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">
+                Vậy Website động là gì? Ngược lại ở trên thì đây là những trang
+                web mà nội dung luôn được cập nhật thường xuyên.
+                <strong
+                  >Những
+                  <a
+                    href="https://mona.media/web-dong-la-gi/"
+                    target="_blank"
+                    rel="noopener"
+                    data-wpel-link="internal"
+                    class="active"
+                    >website động</a
+                  >
+                  khi lập trình sẽ bao gồm 2 phần như sau:</strong
+                >
+              </p>
+              <ul class="space-y-4 list-none">
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-[16px] ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <span
+                      >Một phần được hiển thị trên công cụ trình duyệt mà khi
+                      truy cập mạng ta thường thấy.</span
+                    >
+                  </div>
+                </li>
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-[16px] ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <span
+                      >Một phần còn lại nằm ngầm bên dưới dùng để điều khiển nội
+                      dung của website. Nội dung phía sau gọi là phần quản trị
+                      và thông thường thì chỉ những người nắm quyền quản trị
+                      website mới được phép truy cập vào.</span
+                    >
+                  </div>
+                </li>
+              </ul>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px]">So sánh với website tĩnh thì tính tương tác của website động cao hơn. Và đa số các trang web hiện đại cho ra đời ngày nay đều là website động.
+                <p class="text-[#5f5f5f] text-[14px] leading-[28px]">Vậy Website động là gì? Ngược lại ở trên thì đây là những trang web mà nội dung luôn được cập nhật thường xuyên. 
+                  <strong>Những <a href="" class="active">website động</a>
+                     khi lập trình sẽ bao gồm 2 phần như sau:</strong>
+                    </p>
+              </p>
+              <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Các website theo đối tượng sử dụng
+              </h3>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Ngoài ra, website còn được phân loại dựa theo đối tượng sử dụng, chẳng hạn như:</p>
+              <ul class="space-y-4 list-none">
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-[16px] ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <span
+                      >Web dành cho doanh nghiệp.</span
+                    >
+                  </div>
+                </li>
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-[16px] ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <span
+                      >Web cá nhân.</span
+                    >
+                  </div>
+                </li>
+                <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-[16px] ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <span
+                      >Web giáo dục.</span
+                    >
+                  </div>
+                  </li>
+                    <li
+                    class="text-[14px] text-[#5f5f5f] flex items-start gap-[16px] ml-[8px]"
+                  >
+                    <div
+                      class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                    ></div>
+                    <div>
+                      <span
+                        >Website tin tức, báo chí.</span
+                      >
+                    </div>
+                  </li>
+                  <li
+                  class="text-[14px] text-[#5f5f5f] flex items-start gap-[16px] ml-[8px]"
+                >
+                  <div
+                    class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                  ></div>
+                  <div>
+                    <span
+                      >Website tổ chức từ thiện.</span
+                    >
+                  </div>
+                </li>
+                <li
+                class="text-[14px] text-[#5f5f5f] flex items-start gap-[16px] ml-[8px]"
+              >
                 <div
-                  class="flex items-center flex-wrap justify-between border-t border-dashed border-[#777777] py-4"
-                >
-                  <!-- Tags Section -->
-                  <div class="flex items-center gap-2">
-                    <div class="flex items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4 mr-1 text-[#010f2e]"
-                        fill="#000"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A2 2 0 013 12V7a4 4 0 014-4z"
-                        />
-                      </svg>
-                      <span class="font-medium text-[#010f2e] mr-[10px]"
-                        >Tag:</span
-                      >
-                    </div>
-                    <div class="flex">
-                      <a
-                        class="px-4 py-1 rounded-[4px] border border-[1px] border-[#777777] text-sm text-gray-600 hover:bg-[#f0a80e] hover:border-[#f0a80e] hover:text-[#fff] cursor-pointer mr-[15px] text-[#777777]"
-                      >
-                        Business
-                      </a>
-                      <a
-                        class="px-4 py-1 rounded-[4px] border border-[1px] border-[#777777] text-sm text-gray-600 hover:bg-[#f0a80e] hover:border-[#f0a80e] hover:text-[#fff] cursor-pointer mr-[15px] text-[#777777]"
-                      >
-                        News
-                      </a>
-                      <a
-                        class="px-4 py-1 rounded-[4px] border border-[1px] border-[#777777] text-sm text-gray-600 hover:bg-[#f0a80e] hover:border-[#f0a80e] hover:text-[#fff] cursor-pointer mr-[15px] text-[#777777]"
-                      >
-                        Brand
-                      </a>
-                    </div>
-                  </div>
-                  <!-- Social Media Icons -->
-                  <div class="flex flex-wrap items-center gap-3 mt-[20px]">
-                    <a
-                      href="#"
-                      class="socical__link w-10 h-10 rounded-full bg-[#FFF1E9] flex items-center justify-center transition-colors"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-[16px] w-[16px] text-[#f67a30]"
-                        fill="currentColor"
-                        viewBox="0 0 320 512"
-                      >
-                        <path
-                          d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 6 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
-                        />
-                      </svg>
-                    </a>
-                    <a
-                      href="#"
-                      class="socical__link w-10 h-10 rounded-full bg-[#FFE9E9] flex items-center justify-center transition-colors"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-[16px] w-[16px] text-[#f67a30]"
-                        fill="currentColor"
-                        viewBox="0 0 448 512"
-                      >
-                        <path
-                          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                        />
-                      </svg>
-                    </a>
-                    <a
-                      href="#"
-                      class="socical__link w-10 h-10 rounded-full bg-[#FFE9E9] flex items-center justify-center transition-colors"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-[16px] w-[16px] text-[#f67a30]"
-                        fill="currentColor"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-[115px]">
-                <span
-                  class="text-[22px] leading-[25px] text-[#f56915] font-bold uppercase mb-[11px]"
-                  >OUR BLOG</span
-                >
-                <h3
-                  class="text-[40px] md:text-[65px] leading-[75px] text-[#010f2e] mb-[32px] font-bold"
-                >
-                  Related Blog
-                </h3>
+                  class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"
+                ></div>
                 <div>
-                  <div class="grid grid-cols-12 gap-6">
-                    <!-- Blog Card 1 -->
-                    <div
-                      class="col-span-12 md:col-span-6 card__item bg-white rounded-[4px] overflow-hidden shadow-sm"
-                    >
-                      <div class="relative">
-                        <img
-                          src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/blog-img2.jpg"
-                          alt="Business Meeting"
-                          class="w-full h-[250px] object-cover"
-                        />
-                        <!-- Date Badge -->
-                        <div
-                          class="absolute top-4 left-4 bg-[#f67a30] text-white px-4 py-2 rounded flex items-center gap-2"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"
-                            class="w-[15px] h-[15px] fill-current"
-                          >
-                            <path
-                              d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
-                            ></path>
-                          </svg>
-                          7 March, 2024
-                        </div>
-                      </div>
-
-                      <div class="pt-[26px] pb-[30px] px-[35px]">
-                        <h3
-                          class="text-[25px] md:text-[23px] text-[#010f2e] leading-[35px] mb-[11px] font-bold hover:text-[#f56915]"
-                        >
-                          <a class="cursor-pointer">
-                            Maecenas non libero in nisi commodo.</a
-                          >
-                        </h3>
-                        <p class="text-[#777777] text-[15px] mb-[12px]">
-                          Cras a erat vitae ex rutrum venenatis ut a nunc.
-                          Praesent turpis ipsum, maximus vitae lectus ut,
-                          sodales cursus leo.
-                        </p>
-                        <a
-                          href="#"
-                          class="text-[#f67a30] font-bold flex items-center gap-2 underline hover:text-[#010f2e]"
-                        >
-                          READ MORE
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-4 w-4"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M9 5l7 7-7 7"
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-
-                    <!-- Blog Card 2 -->
-                    <div
-                      class="col-span-12 md:col-span-6 card__item bg-white rounded-[4px] overflow-hidden shadow-sm"
-                    >
-                      <div class="relative">
-                        <img
-                          src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/blog-img3.jpg"
-                          alt="Business Handshake"
-                          class="w-full h-[250px] object-cover"
-                        />
-                        <!-- Date Badge -->
-                        <div
-                          class="absolute top-4 left-4 bg-[#f67a30] text-white px-4 py-2 rounded flex items-center gap-2"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512"
-                            class="w-[15px] h-[15px] fill-current"
-                          >
-                            <path
-                              d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"
-                            ></path>
-                          </svg>
-                          7 March, 2024
-                        </div>
-                      </div>
-
-                      <div class="pt-[26px] pb-[30px] px-[35px]">
-                        <h3
-                          class="text-[25px] md:text-[23px] text-[#010f2e] leading-[35px] mb-[11px] font-bold hover:text-[#f56915]"
-                        >
-                          <a class="cursor-pointer"
-                            >The Biggest Contribution Of Corporate.</a
-                          >
-                        </h3>
-                        <p class="text-[#777777] text-[15px] mb-[12px]">
-                          Cras a erat vitae ex rutrum venenatis ut a nunc.
-                          Praesent turpis ipsum, maximus vitae lectus ut,
-                          sodales cursus leo.
-                        </p>
-                        <a
-                          href="#"
-                          class="text-[#f67a30] font-bold flex items-center gap-2 hover:text-[#010f2e] underline"
-                        >
-                          READ MORE
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-4 w-4"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M9 5l7 7-7 7"
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
+                  <span
+                    >Website bán hàng.</span
+                  >
+                </div>
+              </li>
+              </ul>
+              <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Phân loại website theo lĩnh vực
+              </h3>
+              <div>
+                <img
+                  src="https://mona.media/wp-content/uploads/2023/06/phan-loai-website-theo-linh-vuc.jpg"
+                  alt=""
+                  class="w-[100%] rounded-[10px]"
+                />
+              </div>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Tùy vào từng lĩnh vực, website sẽ có những loại riêng biệt, có thể kể đến như:</p>
+              <ul class="space-y-4 list-none">
+                <li class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]">
+                  <div class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong><a href="">Website giải trí:</a></strong>
+                    Đặc điểm của website này là cung cấp cho người dùng giải trí như xem phim,, nghe nhạc, chơi game online ngay trên website,…
                   </div>
-                </div>
-              </div>
-              <div class="mt-[115px]">
-                <span
-                  class="text-[22px] leading-[25px] text-[#f56915] font-bold uppercase mb-[11px]"
-                  >POST REVIEW</span
-                >
-                <h3
-                  class="text-[40px] md:text-[65px] leading-[75px] text-[#010f2e] mb-[32px] font-bold"
-                >
-                  Comments
-                </h3>
-                <div>
-                  <div class="space-y-8">
-                    <div class="grid grid-col-12">
-                      <div class="col-span-12 mb-[20px]">
-                        <div
-                          class="comment__item flex flex-col md:flex-row gap-4 p-[5px] items-center"
-                        >
-                          <img
-                            src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/detail-comment-img1.jpg"
-                            alt="Jhone Doe"
-                            class=""
-                          />
-                          <div class="flex-1">
-                            <div class="flex justify-between items-center mb-2">
-                              <h4
-                                class="text-[20px] leading-[30px] mb-[10px] font-bold text-[#010f2e] w-full text-center md:text-left"
-                              >
-                                Jhone Doe
-                              </h4>
-                            </div>
-                            <p
-                              class="text-[#777777] text-[15px] leading-[24px] mb-[12px]"
-                            >
-                              Donec arcu est, ullamcorper sed ultrices vitae,
-                              fringilla sodales lacus. Phasellus blandit
-                              porttitor risus, et faucibus nisi.
-                            </p>
-                            <button
-                              class="text-[#f56915] text-[15px] font-bold hover:text-[#f0a80e] flex items-center gap-[6px] w-full justify-center md:justify-start"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-[20px] w-[20px]"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"
-                                />
-                              </svg>
-                              REPLY
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-span-12 mb-[20px]">
-                        <div
-                          class="comment__item flex flex-col md:flex-row gap-4 p-[5px] items-center ml-[0px] md:ml-[60px]"
-                        >
-                          <img
-                            src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/detail-comment-img2.jpg"
-                            alt="Jhone Doe"
-                            class=""
-                          />
-                          <div class="flex-1">
-                            <div class="flex justify-between items-center mb-2">
-                              <h4
-                                class="text-[20px] leading-[30px] mb-[10px] font-bold text-[#010f2e] w-full text-center md:text-left"
-                              >
-                                Shila Rosa
-                              </h4>
-                            </div>
-                            <p
-                              class="text-[#777777] text-[15px] leading-[24px] mb-[12px]"
-                            >
-                              Donec arcu est, ullamcorper sed ultrices vitae,
-                              fringilla sodales lacus. Phasellus blandit
-                              porttitor risus, et faucibus nisi.
-                            </p>
-                            <button
-                              class="text-[#f56915] text-[15px] font-bold hover:text-[#f0a80e] flex items-center gap-[6px] w-full justify-center md:justify-start"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-[20px] w-[20px]"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"
-                                />
-                              </svg>
-                              REPLY
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-span-12 mb-[20px]">
-                        <div
-                          class="comment__item flex flex-col md:flex-row gap-4 p-[5px] items-center"
-                        >
-                          <img
-                            src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/detail-comment-img3.jpg"
-                            alt="Jhone Doe"
-                            class=""
-                          />
-                          <div class="flex-1">
-                            <div class="flex justify-between items-center mb-2">
-                              <h4
-                                class="text-[20px] leading-[30px] mb-[10px] font-bold text-[#010f2e] w-full text-center md:text-left"
-                              >
-                                Boni Joye
-                              </h4>
-                            </div>
-                            <p
-                              class="text-[#777777] text-[15px] leading-[24px] mb-[12px]"
-                            >
-                              Donec arcu est, ullamcorper sed ultrices vitae,
-                              fringilla sodales lacus. Phasellus blandit
-                              porttitor risus, et faucibus nisi.
-                            </p>
-                            <button
-                              class="text-[#f56915] text-[15px] font-bold hover:text-[#f0a80e] flex items-center gap-[6px] w-full justify-center md:justify-start"
-                            >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-[20px] w-[20px]"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"
-                                />
-                              </svg>
-                              REPLY
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                </li>
+                <li class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]">
+                  <div class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>Website về tin tức:</strong> Trang web cung cấp thông tin, kiến thức tổng hợp, cập nhật xu hướng cho khách hàng.
                   </div>
+                </li>
+                <li class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]">
+                  <div class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>Website thành viên:</strong> Các nền tảng có mô hình theo thành viên như Netflix thường cung cấp nội dung cho những người đăng ký dịch vụ xem phim của họ. Website dạng thành viên này sẽ giúp quản lý tốt hơn, cung cấp nội dung giải trí cao cấp cho các thành viên.
+                  </div>
+                </li>
+                <li class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]">
+                  <div class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>Mạng xã hội:</strong> Nổi bật nhất trong loại website này là mạng xã hội Facebook, giúp người dùng tương tác với nhiều người dùng mạng xã hội khác trên toàn thế giới.
+                  </div>
+                </li>
+                <li class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]">
+                  <div class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>Website chính phủ:</strong> Nơi cung cấp những thông tin uy tín về chính trị, y tế, giáo dục và các vấn đề xoay quanh về kinh tế.
+                  </div>
+                </li>
+                <li class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]">
+                  <div class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>Website giáo dục:</strong> Các trường đại học, các tổ chức giáo dục theo từng cấp sẽ có loại website về giáo dục. Đặc điểm của website giáo dục giúp để nhà trường có thể cung cấp thông tin về khóa học, tài liệu học tập,… để học sinh nắm thông tin một cách nhanh nhất.
+                  </div>
+                </li>
+                <li class="text-[14px] text-[#5f5f5f] flex items-start gap-2 ml-[8px]">
+                  <div class="w-[8px] h-[8px] border-[2px] border-[#f58635] rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <strong>Website công cụ tìm kiếm:</strong> Lấy ví dụ cụ thể như Google, giúp người dùng tìm kiếm thông tin một cách chính xác.
+                  </div>
+                </li>
+              </ul>
+              <h2 class="text-[#7c0fd1] text-[32px] font-[700] my-[20px]">
+                Tại sao doanh nghiệp cần phải thiết kế website?
+              </h2>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Khi hiểu được bản chất <strong>website là gì</strong>, chắc chắn bạn sẽ không thể bỏ qua được những lợi ích thiết thực mà một trang web mang lại. Đó cũng là lý do chính vì sao các doanh nghiệp muốn thành công đều cần sở hữu một website cho riêng mình.</p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">VIDEO DƯỚI ĐÂY, MONA sẽ giúp thấy rõ <strong><span class="underline text-[#ff0000]">6 điều quan trọng bạn sẽ bỏ lỡ nếu không TẠO WEBSITE</span></strong> – <strong>XEM NGAY</strong>!</p>
+              <div>
+                <iframe 
+                  width="100%" 
+                  height="450" 
+                  src="https://www.youtube.com/embed/x7FNCuGsPZg" 
+                  title="6 điều bạn sẽ bỏ lỡ nếu không xây dựng website"
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Website – “mặt tiền” của mọi doanh nghiệp
+              </h3>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Nếu như trong thực tế, văn phòng là nơi thực hiện các cuộc giao dịch trực tiếp của doanh nghiệp và qua đó cũng là nơi gây ấn tượng với khách hàng đầu tiên khi bước chân vào. Thì trên nền tảng trực tuyến Internet, website cũng được ví như vậy. <strong>Website chính là bộ mặt của doanh nghiệp khi khách hàng có nhu cầu tìm kiếm và truy cập vào.</strong></p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Thông qua trang web, doanh nghiệp có thể giới thiệu với khách hàng những thông tin về công ty, các sản phẩm và dịch vụ mà bạn đang cung cấp. Bên cạnh đó một website được đầu tư thiết kế chuyên nghiệp cũng sẽ tạo được dấu ấn và lòng tin trong mắt khách hàng.</p>
+              <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Tăng tiềm lực cạnh tranh
+              </h3>
+              <div>
+                <img src="https://mona.media/wp-content/uploads/2023/06/tang-ty-le-canh-tranh-voi-website-chuyen-nghiep.jpg" alt="" class="w-[100%] rounded-[10px]">
+              </div>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Website chính là “<strong>trợ thủ đắc lực</strong>” giúp bạn <strong><a href="https://mona.media/dinh-vi-thuong-hieu-la-gi/" target="_blank" rel="noopener" data-wpel-link="internal">định vị thương hiệu</a> </strong>trên Internet, tăng tiềm lực cạnh tranh với đối thủ trên thị trường. Xu hướng ngày nay của khách hàng khi cần tìm kiếm bất kỳ thông tin về sản phẩm hay dịch vụ, việc đầu tiên họ làm là search thông tin bằng công cụ tìm kiếm trên internet đế tham khảo trước khi đến nơi trực tiếp. Phải chăng lúc này, <strong>website đóng vai trò chủ lực giúp bạn có thêm thế mạnh để cạnh tranh</strong> và thu hút khách hàng về phía mình nhanh hơn trước đối thủ.</p>
+              <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Nơi cung cấp thông tin đáng tin cậy
+              </h3>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Website là nguồn cung cấp những thông tin chính thống vô cùng hữu ích. Tất cả mọi thông tin mà bạn mong muốn truyền đạt đến khách hàng đều có thể được biểu hiện thông qua website. Trang web chính là kênh đặc biệt cập nhật các thông tin mới liên tục cho khách hàng như các chương trình khuyến mãi, sản phẩm, các hướng dẫn sử dụng,…</p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Tuy nhiên, mọi thông tin cần được đầu tư nội dung trau chuốt, thể hiện cách rõ ràng, mạch lạc và hấp dẫn người đọc, nhất là những <a href="#" class="active" ><strong>khách hàng mục tiêu</strong></a> mà bạn hướng đến.</p>
+              <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Kênh chăm sóc khách hàng 24/7
+              </h3>
+              <div>
+                <img src="https://mona.media/wp-content/uploads/2023/06/ho-tro-cham-soc-khach-hang.jpg" alt="" class="w-[100%] rounded-[10px]">
+              </div>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Không chỉ phục vụ cho mục đích bán hàng, website còn có chức năng hỗ trợ các công việc tư vấn trực tuyến, chăm sóc khách hàng, giải đáp thắc mắc mọi thông tin cho khách hàng 24/7. Một trong những đặc điểm nổi trội nhất của website đó là cho phép sự tương tác hiệu quả giữa khách hàng và doanh nghiệp.</p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Bạn có thể tận dụng website để thực hiện các cuộc khảo sát nho nhỏ về <a href="#" class="active"><strong>thị trường</strong></a> để hiểu hơn khách hàng tiềm năng của mình hay thu thập những đánh giá, nhận xét của khách hàng về doanh nghiệp mình.</p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Tổng hợp các nguồn thông tin quý báu này, bạn sẽ có thể dễ dàng biết được thị hiếu người tiêu dùng. Từ đó giúp cải thiện chất lượng sản phẩm, dịch vụ sao cho phù hợp hơn với đa số người dùng mà không cần tốn quá nhiều chi phí và thời gian khảo sát.</p>
+              <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
+                Chiến dịch Marketing Online
+              </h3>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Một thế mạnh khi sở hữu website không thể không nhắc đến đó là nơi hỗ trợ thực hiện các <a href="#" class="active"><strong>kế hoạch Marketing bán hàng</strong></a> và kế hoạch Marketing tổng thể cho doanh nghiệp. Xu hướng người dùng sử dụng Internet ngày càng gia tăng không ngừng, đồng nghĩa Marketing Online dần trở thành công cụ đắc lực.</p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Từ đó giúp doanh nghiệp thu hút nhiều khách hàng tiềm năng bên cạnh việc áp dụng các phương thức truyền thống. Để thực hiện việc lan tỏa và <a href="#" class="active"><strong>mở rộng thương hiệu</strong></a> chắc chắn không thể thiếu vai trò quan trọng của website.</p>
+              <div class="mona__description bg-[#f2e9e963] p-[24px] rounded-[15px] border-[#f3d3ff]">
+                <p class="text-[#5f5f5f] text-[14px] leading-[28px]">
+                  <strong>MONA Media</strong> hiện đang cung cấp dịch vụ 
+                  <strong class="text-[#ff0000]">thiết kế website chuyên nghiệp</strong> với các mẫu thiết kế đa dạng, cập nhật những xu hướng mới nhất. Với hơn <strong>10+ năm</strong> kinh nghiệm thiết kế web chuyên nghiệp, MONA đảm bảo thiết kế trang web thân thiện với người dùng, chuẩn SEO, load nhanh và Hosting chất lượng
+                </p>
+                <p class="text-[#5f5f5f] text-[14px] leading-[28px] mt-[16px]">
+                  Hãy 
+                  <strong class="text-[#ff0000]">LIÊN HỆ NGAY</strong>
+                  với chúng tôi qua
+                  <strong class="text-[#ff0000]">Hotline 1900 636 648</strong>
+                  để nhận báo giá và tư vấn chi tiết nhất nhé.
+                </p>
+                <div class="mt-[16px]">
+                  <a href="">
+                    <img 
+                    src="https://mona.media/wp-content/uploads/2023/09/thiet-ke-website.jpg"
+                    alt="Banner thiết kế website" 
+                    class="w-full rounded-[8px]"
+                  />
+                  </a>
                 </div>
               </div>
-              <div class="mt-[113px]">
-                <span
-                  class="text-[22px] leading-[25px] text-[#f56915] font-bold uppercase mb-[11px]"
-                  >REPLY NOW</span
-                >
-                <h3
-                  class="text-[40px] md:text-[65px] leading-[75px] text-[#010f2e] mb-[32px] font-bold"
-                >
-                  Leave A Reply
-                </h3>
-                <div>
-                  <form class="max-w-full">
-                    <div class="grid grid-cols-12 gap-5 mb-5">
-                      <div class="col-span-12 lg:col-span-3">
-                        <input
-                          type="text"
-                          placeholder="First Name"
-                          class="w-full px-4 py-3 border border-[#b7b7b7] rounded outline-none text-[#777777] text-[15px] placeholder-[#777777]"
-                        />
-                      </div>
-                      <div class="col-span-12 lg:col-span-3">
-                        <input
-                          type="text"
-                          placeholder="Last Name"
-                          class="w-full px-4 py-3 border border-[#b7b7b7] rounded outline-none text-[#777777] text-[15px] placeholder-[#777777]"
-                        />
-                      </div>
-                      <div class="col-span-12 lg:col-span-3">
-                        <input
-                          type="email"
-                          placeholder="Email Address"
-                          class="w-full px-4 py-3 border border-[#b7b7b7] rounded outline-none text-[#777777] text-[15px] placeholder-[#777777]"
-                        />
-                      </div>
-                    </div>
-                    <div class="mb-5">
-                      <textarea
-                        rows="6"
-                        placeholder="Message"
-                        class="w-full h-[120px] px-4 py-3 border border-[#b7b7b7] rounded resize-none outline-none text-[#777777] placeholder-[#777777]"
-                      ></textarea>
-                    </div>
-
-                    <button
-                      type="submit"
-                      class="btn__reply h-[60px] px-[32px] py-[15px] text-white font-bold rounded hover:bg-[#e56a20] transition-colors"
-                    >
-                      POST NOW
-                    </button>
-                  </form>
-                </div>
-              </div>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Thông qua những thông tin cơ bản trên, chắc các bạn đã hiểu rõ hơn về <strong>website là gì</strong>. Hy vọng rằng những kiến thức<strong> MONA Media</strong> đã chia sẻ ở trên sẽ mang lại nhiều hữu ích cho các bạn trong việc tìm hiểu thiết kế website phục vụ cho kế hoạch kinh doanh của mình. Chúc các bạn thành công!</p>
+              
             </div>
           </div>
 
           <!-- Right Sidebar -->
-          <div class="col-span-12 lg:col-span-3 order-3 md:order-3">
-            <div class="relative mb-[32px] p-[20px]">
-              <img
-                src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/advertising-img.jpg"
-                alt="Business Meeting"
-                class="w-full h-[370px] object-cover rounded-[4px]"
-              />
-              <div
-                class="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-[50%] w-[100% - 100px] h-[165px] bg-[#f67a30]/90 flex items-center justify-center p-[10px]"
-              >
-                <h2 class="text-[28px] font-bold text-white">Advertising</h2>
-              </div>
-            </div>
-
-            <!-- Tags -->
-            <div class="rounded-lg p-6 mb-8">
-              <h2
-                class="tag__heading relative text-[30px] leading-[35px] text-[#010f2e] font-bold mb-[30px] pb-[4px]"
-              >
-                Tages
-              </h2>
-              <div class="flex flex-wrap gap-3">
-                <span
-                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
-                >
-                  Business
-                </span>
-                <span
-                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
-                >
-                  News
-                </span>
-                <span
-                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
-                >
-                  Brand
-                </span>
-                <span
-                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
-                >
-                  Website
-                </span>
-                <span
-                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
-                >
-                  Internal
-                </span>
-                <span
-                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
-                >
-                  Strategy
-                </span>
-                <span
-                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
-                >
-                  Brand
-                </span>
-                <span
-                  class="px-5 py-2 border border-[#777777] rounded text-[#777777] text-[15px] hover:bg-[#f0a80e] hover:text-white hover:border-[#f0a80e] transition-colors cursor-pointer"
-                >
-                  Mission
-                </span>
-              </div>
-            </div>
-
-            <!-- Gallery -->
-            <div class="p-[20px]">
-              <h2
-                class="tag__heading relative text-[30px] leading-[35px] text-[#010f2e] font-bold mb-[30px] pb-[4px]"
-              >
-                Gallery
-              </h2>
-              <div class="row">
-                <div class="grid grid-cols-12 gap-4">
-                  <div class="col-span-4">
-                    <img
-                      src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/gallery-img1.jpg"
-                      alt=""
-                      class="w-full h-24 object-cover rounded"
-                    />
-                  </div>
-                  <div class="col-span-4">
-                    <img
-                      src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/gallery-img2.jpg"
-                      alt=""
-                      class="w-full h-24 object-cover rounded"
-                    />
-                  </div>
-                  <div class="col-span-4">
-                    <img
-                      src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/gallery-img3.jpg"
-                      alt=""
-                      class="w-full h-24 object-cover rounded"
-                    />
-                  </div>
-                  <div class="col-span-4">
-                    <img
-                      src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/gallery-img4.jpg"
-                      alt=""
-                      class="w-full h-24 object-cover rounded"
-                    />
-                  </div>
-                  <div class="col-span-4">
-                    <img
-                      src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/gallery-img5.jpg"
-                      alt=""
-                      class="w-full h-24 object-cover rounded"
-                    />
-                  </div>
-                  <div class="col-span-4">
-                    <img
-                      src="https://shivaa.dexignzone.com/shivaa-HTML/homepage_3/assets/images/gallery-img6.jpg"
-                      alt=""
-                      class="w-full h-24 object-cover rounded"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="col-span-12 lg:col-span-3 order-3 md:order-3 md:mt-[24px] md:mx-[126px] lg:mt-[0px] lg:mx-[0px] px-[10px]">
+            <a href="" class=" block mb-[20px]">
+              <img class="rounded-[10px]" src="https://mona.media/wp-content/uploads/2024/05/hoc-kinh-doanh-e-learning-mien-phi.png" alt="">
+            </a>
+            <a href="" class=" block mb-[20px]">
+              <img class="rounded-[10px]" src="https://mona.media/wp-content/uploads/2024/12/khuyen-mai-dich-vu-seo-quy-4.jpg" alt="">
+            </a>
           </div>
         </div>
       </div>
