@@ -17,72 +17,74 @@
         <div class="grid grid-cols-12">
           <!-- Left Sidebar -->
           <div
-            class="col-span-12 lg:col-span-3 order-2 md:order-2 lg:order-1 p-[10px] ]"
+            class="col-span-12 lg:col-span-3 order-2 md:order-2 lg:order-1 p-[10px] "
           >
-            <div
-              class="rounded-lg pt-[26px] pr-[19px] hover:border hover:border-[#dadada] cursor-pointer rounded-[8px] md:hidden lg:block"
-            >
-              <div class="flex items-center justify-between pl-[19px]">
-                <h2 class="text-[14px] font-bold text-[#3a3a3a]">Nội dung</h2>
-                <div
-                  class="w-[20px] h-[20px] bg-[#7c0fd1] rounded-[50%] relative"
-                >
-                  <svg
-                    class="w-[16px] absolute top-[3px] left-[2px]"
-                    fill="#fff"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 512 512"
-                  >
-                    <path
-                      d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
-                    />
-                  </svg>
+            <div class="lg:sticky lg:top-[30px]">
+              <div
+                class="rounded-lg pt-[26px] pr-[19px] border border-transparent hover:border-[#dadada] cursor-pointer rounded-[8px] md:hidden lg:block"
+              >
+                <div id="toggleBtn" class="flex items-center justify-between pl-[19px] cursor-pointer">
+                  <h2 class="text-[14px] font-bold text-[#3a3a3a]">Nội dung</h2>
+                  <div class="w-[20px] h-[20px] bg-[#7c0fd1] rounded-[50%] relative">
+                    <svg
+                      id="toggleIcon"
+                      class="w-[16px] absolute top-[3px] left-[2px] transition-transform duration-300"
+                      fill="#fff"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+                      />
+                    </svg>
+                  </div>
                 </div>
+                
+                <ul id="menuList" class="mt-[20px] pl-[19px] pr-[6px] transition-all duration-300">
+                  <li>
+                    <a
+                      href="#"
+                      class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
+                      >Website là gì?</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
+                      >Cấu tạo và cách hoạt động của website như thế nào?</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
+                      >Những trang quan trọng nhất trong website là gì?</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
+                      >Các thành phần cơ bản của website là gì?</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
+                      >Phân loại website phổ biến hiện nay</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
+                      >Tại sao doanh nghiệp cần phải thiết kế website?</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <ul class="mt-[20px] pl-[19px] pr-[6px]">
-                <li>
-                  <a
-                    href="#"
-                    class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
-                    >Website là gì?</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
-                    >Cấu tạo và cách hoạt động của website như thế nào?</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
-                    >Những trang quan trọng nhất trong website là gì?</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
-                    >Các thành phần cơ bản của website là gì?</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
-                    >Phân loại website phổ biến hiện nay</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block text-[#354a60] hover:text-[#7c0fd1] py-[8px] font-[400] text-[13px]"
-                    >Tại sao doanh nghiệp cần phải thiết kế website?</a
-                  >
-                </li>
-              </ul>
             </div>
           </div>
 
@@ -857,7 +859,7 @@
                 </iframe>
               </div>
               <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
-                Website – “mặt tiền” của mọi doanh nghiệp
+                Website – "mặt tiền" của mọi doanh nghiệp
               </h3>
               <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Nếu như trong thực tế, văn phòng là nơi thực hiện các cuộc giao dịch trực tiếp của doanh nghiệp và qua đó cũng là nơi gây ấn tượng với khách hàng đầu tiên khi bước chân vào. Thì trên nền tảng trực tuyến Internet, website cũng được ví như vậy. <strong>Website chính là bộ mặt của doanh nghiệp khi khách hàng có nhu cầu tìm kiếm và truy cập vào.</strong></p>
               <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Thông qua trang web, doanh nghiệp có thể giới thiệu với khách hàng những thông tin về công ty, các sản phẩm và dịch vụ mà bạn đang cung cấp. Bên cạnh đó một website được đầu tư thiết kế chuyên nghiệp cũng sẽ tạo được dấu ấn và lòng tin trong mắt khách hàng.</p>
@@ -867,7 +869,7 @@
               <div>
                 <img src="https://mona.media/wp-content/uploads/2023/06/tang-ty-le-canh-tranh-voi-website-chuyen-nghiep.jpg" alt="" class="w-[100%] rounded-[10px]">
               </div>
-              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Website chính là “<strong>trợ thủ đắc lực</strong>” giúp bạn <strong><a href="https://mona.media/dinh-vi-thuong-hieu-la-gi/" target="_blank" rel="noopener" data-wpel-link="internal">định vị thương hiệu</a> </strong>trên Internet, tăng tiềm lực cạnh tranh với đối thủ trên thị trường. Xu hướng ngày nay của khách hàng khi cần tìm kiếm bất kỳ thông tin về sản phẩm hay dịch vụ, việc đầu tiên họ làm là search thông tin bằng công cụ tìm kiếm trên internet đế tham khảo trước khi đến nơi trực tiếp. Phải chăng lúc này, <strong>website đóng vai trò chủ lực giúp bạn có thêm thế mạnh để cạnh tranh</strong> và thu hút khách hàng về phía mình nhanh hơn trước đối thủ.</p>
+              <p class="text-[#5f5f5f] text-[14px] leading-[28px] my-[20px]">Website chính là "<strong>trợ thủ đắc lực</strong>" giúp bạn <strong><a href="https://mona.media/dinh-vi-thuong-hieu-la-gi/" target="_blank" rel="noopener" data-wpel-link="internal">định vị thương hiệu</a> </strong>trên Internet, tăng tiềm lực cạnh tranh với đối thủ trên thị trường. Xu hướng ngày nay của khách hàng khi cần tìm kiếm bất kỳ thông tin về sản phẩm hay dịch vụ, việc đầu tiên họ làm là search thông tin bằng công cụ tìm kiếm trên internet đế tham khảo trước khi đến nơi trực tiếp. Phải chăng lúc này, <strong>website đóng vai trò chủ lực giúp bạn có thêm thế mạnh để cạnh tranh</strong> và thu hút khách hàng về phía mình nhanh hơn trước đối thủ.</p>
               <h3 class="text-[#7c0fd1] font-[20px] font-[600] my-[19px]">
                 Nơi cung cấp thông tin đáng tin cậy
               </h3>
@@ -916,15 +918,22 @@
 
           <!-- Right Sidebar -->
           <div class="col-span-12 lg:col-span-3 order-3 md:order-3 md:mt-[24px] md:mx-[126px] lg:mt-[0px] lg:mx-[0px] px-[10px]">
-            <a href="" class=" block mb-[20px]">
-              <img class="rounded-[10px]" src="https://mona.media/wp-content/uploads/2024/05/hoc-kinh-doanh-e-learning-mien-phi.png" alt="">
-            </a>
-            <a href="" class=" block mb-[20px]">
-              <img class="rounded-[10px]" src="https://mona.media/wp-content/uploads/2024/12/khuyen-mai-dich-vu-seo-quy-4.jpg" alt="">
-            </a>
+            <div class="lg:sticky lg:top-[30px]">
+              <a href="" class="block mb-[20px]">
+                <img class="rounded-[10px]" src="https://mona.media/wp-content/uploads/2024/05/hoc-kinh-doanh-e-learning-mien-phi.png" alt="">
+              </a>
+            </div>
+            <div class="lg:sticky lg:top-[30px]">
+              <a href="" class="block mb-[20px]">
+                <img class="rounded-[10px]" src="https://mona.media/wp-content/uploads/2024/12/khuyen-mai-dich-vu-seo-quy-4.jpg" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    
+    <script src="./js/menu.js"></script>
   </body>
 </html>
